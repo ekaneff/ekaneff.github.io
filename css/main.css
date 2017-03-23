@@ -21,11 +21,16 @@ h1 {
 	}
 }
 
-
 h3 {
 	font-size: 3.5em;
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 667px) {
+	h3 {
+		font-size: 3em;
+	}
 }
 
 h3, h4, h5, h6 {
@@ -68,16 +73,6 @@ nav {
 	text-align: center;
 	padding-top: 10px;
 	display: none;
-}
-
-@media screen and (max-width: 500px) {
-	nav ul {
-		display: none;
-	}
-
-	.fixed {
-		display: none;
-	}
 }
 
 nav a {
@@ -153,6 +148,14 @@ nav a:hover:before, nav a:hover:after
 }
 
 @media screen and (max-width: 500px) {
+	nav ul {
+		display: none;
+	}
+
+	.fixed {
+		display: none;
+	}
+
 	nav .fixed {
 		display: none;
 	}
@@ -236,7 +239,7 @@ h1::before, h1::after {
 #about {
 	text-align: center;
 	margin-top: 80px;
-	margin-bottom: 50px
+	margin-bottom: 20px
 }
 
 #about img {
@@ -280,6 +283,7 @@ h1::before, h1::after {
 
 #work {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 #work h3 {
@@ -325,14 +329,6 @@ h1::before, h1::after {
 	text-align: right;
 }
 
-.headers h3:first-of-type {
-	text-align: left;
-}
-
-.headers h3 {
-	display: inline
-}
-
 #work::after {
 	content: "";
 	display: block;
@@ -349,6 +345,41 @@ h1::before, h1::after {
 	border: 2px solid #ccc;
 	border-radius: 5px;
 	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 667px) {
+	#work h3 {
+		width: 100%;
+	}
+
+	#work h4 {
+		width: 100%;
+	}
+
+	#work .dev {
+		text-align: center;
+	}
+
+	#work .design {
+		text-align: center;
+	}
+
+	.desc {
+		width: 100%;
+	}
+
+	#work img {
+		padding: 5px 0px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.btn {
+		text-align: left;
+		width: 100%;
+		font-size: 2em;
+		margin-bottom: 50px;
+	}
 }
 
 .button {
